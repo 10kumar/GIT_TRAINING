@@ -87,4 +87,81 @@ To https://github.com/10kumar/GIT_TRAINING.git
  * [new branch]      master -> master
 
 KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
-$
+$ git add .
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   a2.txt
+        new file:   a3.txt
+        new file:   a4.txt
+        new file:   command.txt
+
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git commit -m "All Files added"
+[master c06aa9d] All Files added
+ 4 files changed, 90 insertions(+)
+ create mode 100644 a2.txt
+ create mode 100644 a3.txt
+ create mode 100644 a4.txt
+ create mode 100644 command.txt
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git log
+commit c06aa9d8a5d9a48c78fb94a8556ab0a83e996372 (HEAD -> master)
+Author: abc <sahilrosera007@gmail.com>
+Date:   Thu Apr 24 14:58:42 2025 +0530
+
+    All Files added
+
+commit 94b28e58b938898e1057e0d9e2c3fd4b6676c312 (origin/master)
+Author: abc <sahilrosera007@gmail.com>
+Date:   Thu Apr 24 12:35:26 2025 +0530
+
+    a1.txt empty file added
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.03 KiB | 75.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/10kumar/GIT_TRAINING.git
+   94b28e5..c06aa9d  master -> master
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git remote -v
+origin  https://github.com/10kumar/GIT_TRAINING.git (fetch)
+origin  https://github.com/10kumar/GIT_TRAINING.git (push)
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git log
+commit c06aa9d8a5d9a48c78fb94a8556ab0a83e996372 (HEAD -> master, origin/master)
+Author: abc <sahilrosera007@gmail.com>
+Date:   Thu Apr 24 14:58:42 2025 +0530
+
+    All Files added
+
+commit 94b28e58b938898e1057e0d9e2c3fd4b6676c312
+Author: abc <sahilrosera007@gmail.com>
+Date:   Thu Apr 24 12:35:26 2025 +0530
+
+    a1.txt empty file added
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ nano a1.txt
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ cat a1.txt
+This is a1 file.
+

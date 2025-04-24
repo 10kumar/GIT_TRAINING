@@ -1,0 +1,90 @@
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING
+$ git init
+Initialized empty Git repository in C:/Users/KIIT/Desktop/GIT_TRAINING/.git/
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ ls -a
+./  ../  .git/
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git config user.name "abc"
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git config user.name
+abc
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git config user.email "sahilrosera007@gmail.com"
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git config user.email
+sahilrosera007@gmail.com
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ touch a1.txt
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ ls
+a1.txt
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ touch a2.txt a3.txt a4.txt
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ ls
+a1.txt  a2.txt  a3.txt  a4.txt
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git add a1.txt
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a2.txt
+        a3.txt
+        a4.txt
+
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git commit -m "a1.txt empty file added"
+[master (root-commit) 94b28e5] a1.txt empty file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a1.txt
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git log
+commit 94b28e58b938898e1057e0d9e2c3fd4b6676c312 (HEAD -> master)
+Author: abc <sahilrosera007@gmail.com>
+Date:   Thu Apr 24 12:35:26 2025 +0530
+
+    a1.txt empty file added
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git remote add origin https://github.com/10kumar/GIT_TRAINING.git
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git remote -v
+origin  https://github.com/10kumar/GIT_TRAINING.git (fetch)
+origin  https://github.com/10kumar/GIT_TRAINING.git (push)
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$ git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 214 bytes | 214.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/10kumar/GIT_TRAINING.git
+ * [new branch]      master -> master
+
+KIIT@BT-21051923 MINGW64 ~/Desktop/GIT_TRAINING (master)
+$
